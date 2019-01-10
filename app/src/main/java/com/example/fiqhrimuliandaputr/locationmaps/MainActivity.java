@@ -8,17 +8,25 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button pindah;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pindah = (Button) findViewById(R.id.location);
-        pindah.setOnClickListener(new View.OnClickListener() {
+        Button btn1 = (Button) findViewById(R.id.location);
+        Button btn2 = (Button) findViewById(R.id.masjid);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                Intent intent = new Intent(MainActivity.this,MapsActivity2.class);
                 startActivity(intent);
             }
         });

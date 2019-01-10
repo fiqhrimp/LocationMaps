@@ -18,7 +18,7 @@ android {
     }
 }
 
-apply plugin : 'com.android.application'
+apply plugin: 'com.android.application'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
