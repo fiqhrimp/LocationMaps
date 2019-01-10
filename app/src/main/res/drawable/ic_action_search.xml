@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    ImageView btnSearch= (ImageView) findViewById(R.id.btn_search);
+    btnSearch.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+    Intent intent= new Intent(getApplicationContext(),ExampleActivity.class)
+
+    }
+    });
+</selector>
