@@ -77,7 +77,14 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         });
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
 
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
