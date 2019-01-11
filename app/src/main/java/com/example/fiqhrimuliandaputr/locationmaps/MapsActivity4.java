@@ -79,23 +79,23 @@ public class MapsActivity4 extends FragmentActivity implements OnMapReadyCallbac
         }
         // Add a marker in Sydney and move the camera
         LatLng toiletfmipa = new LatLng(-6.557657, 106.731301);
-        mMap.addMarker(new MarkerOptions().position(toiletfmipa).title("Lokasi FMIPA"));
+        mMap.addMarker(new MarkerOptions().position(toiletfmipa).title("Lokasi Toilet FMIPA"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletfmipa));
 
         LatLng toiletfapet = new LatLng(-6.560530, 106.730406);
-        mMap.addMarker(new MarkerOptions().position(toiletfapet).title("Lokasi GWW"));
+        mMap.addMarker(new MarkerOptions().position(toiletfapet).title("Lokasi Toilet GWW"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletfapet));
 
         LatLng toiletCCR = new LatLng( -6.556069, 106.731038);
-        mMap.addMarker(new MarkerOptions().position(toiletCCR).title("Lokasi CCR"));
+        mMap.addMarker(new MarkerOptions().position(toiletCCR).title("Lokasi Toilet CCR"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletCCR));
 
         LatLng toiletgimipb = new LatLng(-6.557220, 106.732530);
-        mMap.addMarker(new MarkerOptions().position(toiletgimipb).title("Lokasi Gymnasium IPB"));
+        mMap.addMarker(new MarkerOptions().position(toiletgimipb).title("Lokasi Toilet Gymnasium IPB"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletgimipb));
 
         LatLng toiletrektorat = new LatLng(-6.560375, 106.725824);
-        mMap.addMarker(new MarkerOptions().position(toiletrektorat).title("Lokasi Rektorat"));
+        mMap.addMarker(new MarkerOptions().position(toiletrektorat).title("Lokasi Toilet Rektorat"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletrektorat));
 
 
