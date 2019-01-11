@@ -82,21 +82,21 @@ public class MapsActivity4 extends FragmentActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(fmipa).title("Lokasi FMIPA"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(fmipa));
 
-        LatLng fapet = new LatLng(-6.560530, 106.730406);
-        mMap.addMarker(new MarkerOptions().position(fapet).title("Lokasi GWW"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(fapet));
+        LatLng toiletfapet = new LatLng(-6.560530, 106.730406);
+        mMap.addMarker(new MarkerOptions().position(toiletfapet).title("Lokasi GWW"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletfapet));
 
-        LatLng CCR = new LatLng( -6.556069, 106.731038);
-        mMap.addMarker(new MarkerOptions().position(CCR).title("Lokasi CCR"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(CCR));
+        LatLng toiletCCR = new LatLng( -6.556069, 106.731038);
+        mMap.addMarker(new MarkerOptions().position(toiletCCR).title("Lokasi CCR"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletCCR));
 
-        LatLng gimipb = new LatLng(-6.557220, 106.732530);
-        mMap.addMarker(new MarkerOptions().position(gimipb).title("Lokasi Gymnasium IPB"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(gimipb));
+        LatLng toiletgimipb = new LatLng(-6.557220, 106.732530);
+        mMap.addMarker(new MarkerOptions().position(toiletgimipb).title("Lokasi Gymnasium IPB"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletgimipb));
 
-        LatLng rektorat = new LatLng(-6.560375, 106.725824);
-        mMap.addMarker(new MarkerOptions().position(rektorat).title("Lokasi Rektorat"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(rektorat));
+        LatLng toiletrektorat = new LatLng(-6.560375, 106.725824);
+        mMap.addMarker(new MarkerOptions().position(toiletrektorat).title("Lokasi Rektorat"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletrektorat));
 
 
         //mMap.animateCamera(CameraUpdateFactory.zoomBy(11));
