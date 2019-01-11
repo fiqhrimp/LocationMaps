@@ -78,9 +78,9 @@ public class MapsActivity4 extends FragmentActivity implements OnMapReadyCallbac
             mMap.setMyLocationEnabled(true);
         }
         // Add a marker in Sydney and move the camera
-        LatLng fmipa = new LatLng(-6.557657, 106.731301);
-        mMap.addMarker(new MarkerOptions().position(fmipa).title("Lokasi FMIPA"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(fmipa));
+        LatLng toiletfmipa = new LatLng(-6.557657, 106.731301);
+        mMap.addMarker(new MarkerOptions().position(toiletfmipa).title("Lokasi FMIPA"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(toiletfmipa));
 
         LatLng toiletfapet = new LatLng(-6.560530, 106.730406);
         mMap.addMarker(new MarkerOptions().position(toiletfapet).title("Lokasi GWW"));
