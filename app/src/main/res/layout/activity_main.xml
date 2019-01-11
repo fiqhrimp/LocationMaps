@@ -50,11 +50,11 @@
         android:layout_height="128dp"
         android:layout_below="@+id/masjid"
         android:layout_alignStart="@+id/location"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="26dp"
-        android:background="@drawable/canteen"
         android:layout_alignLeft="@+id/location"
-        android:layout_marginLeft="2dp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/canteen" />
 
 
     <Button
@@ -63,11 +63,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/masjid"
         android:layout_alignEnd="@+id/masjid"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="0dp"
-        android:background="@drawable/restroom"
-        android:layout_marginRight="0dp"
-        android:layout_alignRight="@+id/masjid" />
+        android:layout_alignRight="@+id/masjid"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:background="@drawable/restroom" />
 
 
     <Button

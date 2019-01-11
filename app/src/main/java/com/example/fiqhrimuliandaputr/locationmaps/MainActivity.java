@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn1 = (Button) findViewById(R.id.location);
         Button btn2 = (Button) findViewById(R.id.masjid);
+        Button btn3 = (Button) findViewById(R.id.kantin);
+        Button btn4 = (Button) findViewById(R.id.toilet);
+        Button btn5 = (Button) findViewById(R.id.info);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +30,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,MapsActivity2.class);
+                startActivity(intent);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MapsActivity2.class);
+                startActivity(intent);
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MapsActivity2.class);
+                startActivity(intent);
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
                 startActivity(intent);
             }
         });
