@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/masjid"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="262dp"
         android:text="INFO"
         android:textSize="20dp"
         android:textStyle="bold" />
