@@ -78,24 +78,24 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
             mMap.setMyLocationEnabled(true);
         }
         // Add a marker in Sydney and move the camera
-        LatLng mushollafmipa = new LatLng(-6.557657, 106.731301);
+        LatLng mushollafmipa = new LatLng(-6.557604,  106.730658);
         mMap.addMarker(new MarkerOptions().position(mushollafmipa).title("Lokasi Musholla FMIPA"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafmipa));
 
-        LatLng mushollafapet = new LatLng(-6.560530, 106.730406);
+        LatLng mushollafapet = new LatLng(-6.558438, 106.730932);
         mMap.addMarker(new MarkerOptions().position(mushollafapet).title("Lokasi Musholla Fapet"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafapet));
 
-        LatLng masjidipb = new LatLng( -6.556069, 106.731038);
-        mMap.addMarker(new MarkerOptions().position(masjidipb).title("Lokasi MAsjid IPB"));
+        LatLng masjidipb = new LatLng( -6.555624, 106.725492);
+        mMap.addMarker(new MarkerOptions().position(masjidipb).title("Lokasi Masjid IPB"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(masjidipb));
 
-        LatLng mushollafem = new LatLng(-6.557220, 106.732530);
+        LatLng mushollafem = new LatLng(-6.558763, 106.727798);
         mMap.addMarker(new MarkerOptions().position(mushollafem).title("Lokasi Musholla Fem"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafem));
 
-        LatLng mushollarektorat = new LatLng(-6.560375, 106.725824);
-        mMap.addMarker(new MarkerOptions().position(mushollafem).title("Lokasi Musholla Rektorat"));
+        LatLng mushollarektorat = new LatLng(-6.559599, 106.724998);
+        mMap.addMarker(new MarkerOptions().position(mushollarektorat).title("Lokasi Musholla Rektorat"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafem));
 
 

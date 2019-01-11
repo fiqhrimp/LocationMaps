@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MapsActivity2.class);
+                Intent intent = new Intent(MainActivity.this,MapsActivity3.class);
                 startActivity(intent);
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MapsActivity2.class);
+                Intent intent = new Intent(MainActivity.this,MapsActivity4.class);
                 startActivity(intent);
             }
         });

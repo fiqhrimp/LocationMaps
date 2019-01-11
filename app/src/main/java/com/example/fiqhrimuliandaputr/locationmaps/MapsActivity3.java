@@ -78,25 +78,25 @@ public class MapsActivity3 extends FragmentActivity implements OnMapReadyCallbac
             mMap.setMyLocationEnabled(true);
         }
         // Add a marker in Sydney and move the camera
-        LatLng fmipa = new LatLng(-6.557657, 106.731301);
-        mMap.addMarker(new MarkerOptions().position(fmipa).title("Lokasi FMIPA"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(fmipa));
+        LatLng kantinstevia = new LatLng(-6.558884, 106.731268);
+        mMap.addMarker(new MarkerOptions().position(kantinstevia).title("Lokasi Kantin Stevia"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinstevia));
 
-        LatLng fapet = new LatLng(-6.560530, 106.730406);
-        mMap.addMarker(new MarkerOptions().position(fapet).title("Lokasi GWW"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(fapet));
+        LatLng kantintanoto = new LatLng(-6.556305, 106.730380);
+        mMap.addMarker(new MarkerOptions().position(kantintanoto).title("Lokasi Kantin Tanoto"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kantintanoto));
 
-        LatLng CCR = new LatLng( -6.556069, 106.731038);
-        mMap.addMarker(new MarkerOptions().position(CCR).title("Lokasi CCR"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(CCR));
+        LatLng kantinpasca = new LatLng( -6.560087, 106.726972);
+        mMap.addMarker(new MarkerOptions().position(kantinpasca).title("Lokasi Pascasarjana"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinpasca));
 
-        LatLng gimipb = new LatLng(-6.557220, 106.732530);
-        mMap.addMarker(new MarkerOptions().position(gimipb).title("Lokasi Gymnasium IPB"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(gimipb));
+        LatLng kantinfem = new LatLng(-6.558957, 106.728391);
+        mMap.addMarker(new MarkerOptions().position(kantinfem).title("Lokasi Kantin Fakultas Ekonomi"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinfem));
 
-        LatLng rektorat = new LatLng(-6.560375, 106.725824);
-        mMap.addMarker(new MarkerOptions().position(rektorat).title("Lokasi Rektorat"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(rektorat));
+        LatLng kantinasrama = new LatLng(-6.555536, 106.728665);
+        mMap.addMarker(new MarkerOptions().position(kantinasrama).title("Lokasi Kantin Asrama Putra"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinasrama));
 
 
         //mMap.animateCamera(CameraUpdateFactory.zoomBy(11));
