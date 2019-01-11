@@ -54,6 +54,15 @@
         <activity
             android:name=".MapsActivity2"
             android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".MapsActivity3"
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".MapsActivity4"
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>
