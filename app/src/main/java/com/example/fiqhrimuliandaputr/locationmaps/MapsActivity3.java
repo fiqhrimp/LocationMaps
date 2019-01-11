@@ -106,23 +106,28 @@ public class MapsActivity3 extends FragmentActivity implements OnMapReadyCallbac
         }
         // Add a marker in Sydney and move the camera
         LatLng kantinstevia = new LatLng(-6.558884, 106.731268);
-        mMap.addMarker(new MarkerOptions().position(kantinstevia).title("Lokasi Kantin Stevia"));
+        mMap.addMarker(new MarkerOptions().position(kantinstevia).title("Lokasi Kantin Stevia").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinstevia));
 
         LatLng kantintanoto = new LatLng(-6.556305, 106.730380);
-        mMap.addMarker(new MarkerOptions().position(kantintanoto).title("Lokasi Kantin Tanoto"));
+        mMap.addMarker(new MarkerOptions().position(kantintanoto).title("Lokasi Kantin Tanoto").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kantintanoto));
 
         LatLng kantinpasca = new LatLng( -6.560087, 106.726972);
-        mMap.addMarker(new MarkerOptions().position(kantinpasca).title("Lokasi Pascasarjana"));
+        mMap.addMarker(new MarkerOptions().position(kantinpasca).title("Lokasi Pascasarjana").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinpasca));
 
         LatLng kantinfem = new LatLng(-6.558957, 106.728391);
-        mMap.addMarker(new MarkerOptions().position(kantinfem).title("Lokasi Kantin Fakultas Ekonomi"));
+        mMap.addMarker(new MarkerOptions().position(kantinfem).title("Lokasi Kantin Fakultas Ekonomi").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinfem));
 
         LatLng kantinasrama = new LatLng(-6.555536, 106.728665);
-        mMap.addMarker(new MarkerOptions().position(kantinasrama).title("Lokasi Kantin Asrama Putra"));
+        mMap.addMarker(new MarkerOptions().position(kantinasrama).title("Lokasi Kantin Asrama Putra").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kantinasrama));
 
 

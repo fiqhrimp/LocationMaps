@@ -116,6 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             buildGoogleApiClient();
             mMap.setMyLocationEnabled(true);
         }
+
         // Add a marker in Sydney and move the camera
         LatLng fmipa = new LatLng(-6.557657, 106.731301);
         mMap.addMarker(new MarkerOptions().position(fmipa).title("Lokasi FMIPA"));

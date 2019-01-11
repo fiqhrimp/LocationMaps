@@ -111,19 +111,23 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafmipa));
 
         LatLng mushollafapet = new LatLng(-6.558438, 106.730932);
-        mMap.addMarker(new MarkerOptions().position(mushollafapet).title("Lokasi Musholla Fapet"));
+        mMap.addMarker(new MarkerOptions().position(mushollafapet).title("Lokasi Musholla Fapet").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafapet));
 
         LatLng masjidipb = new LatLng( -6.555624, 106.725492);
-        mMap.addMarker(new MarkerOptions().position(masjidipb).title("Lokasi Masjid IPB"));
+        mMap.addMarker(new MarkerOptions().position(masjidipb).title("Lokasi Masjid IPB").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(masjidipb));
 
         LatLng mushollafem = new LatLng(-6.558763, 106.727798);
-        mMap.addMarker(new MarkerOptions().position(mushollafem).title("Lokasi Musholla Fem"));
+        mMap.addMarker(new MarkerOptions().position(mushollafem).title("Lokasi Musholla Fem").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafem));
 
         LatLng mushollarektorat = new LatLng(-6.559599, 106.724998);
-        mMap.addMarker(new MarkerOptions().position(mushollarektorat).title("Lokasi Musholla Rektorat"));
+        mMap.addMarker(new MarkerOptions().position(mushollarektorat).title("Lokasi Musholla Rektorat").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mushollafem));
 
 
