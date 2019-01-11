@@ -1,6 +1,7 @@
 package com.example.fiqhrimuliandaputr.locationmaps;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
@@ -10,6 +11,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -31,7 +34,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener
 
-        {
+{
 
     private GoogleMap mMap;
             private GoogleApiClient googleApiClient;
@@ -46,6 +49,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
                 {
                     CheckUserLocationPermission();
@@ -55,7 +60,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-    }
+
+        Button btnmosque = (Button) findViewById(R.id.btn_mosque);
+                btnmosque.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view2) {
+                        Intent intent = new Intent(MapsActivity.this, MapsActivity2.class);
+                        startActivity(intent);
+                    }
+                });
+                Button btntoilet = (Button) findViewById(R.id.btn_toilet);
+                btntoilet.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view2) {
+                        Intent intent = new Intent(MapsActivity.this, MapsActivity4.class);
+                        startActivity(intent);
+                    }
+                });
+                Button btncanteen = (Button) findViewById(R.id.btn_restaurant);
+                btncanteen.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view2) {
+                        Intent intent = new Intent(MapsActivity.this, MapsActivity3.class);
+                        startActivity(intent);
+                    }
+                });
+
+
+            }
 
 
     /**
@@ -209,3 +241,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
             }
         }
+

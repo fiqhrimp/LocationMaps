@@ -1,6 +1,7 @@
 package com.example.fiqhrimuliandaputr.locationmaps;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
@@ -10,6 +11,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -55,6 +58,22 @@ public class MapsActivity3 extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        Button btnmosque = (Button) findViewById(R.id.btn_mosque);
+        btnmosque.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                Intent intent = new Intent(MapsActivity3.this, MapsActivity2.class);
+                startActivity(intent);
+            }
+        });
+        Button btntoilet = (Button) findViewById(R.id.btn_toilet);
+        btntoilet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                Intent intent = new Intent(MapsActivity3.this, MapsActivity4.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

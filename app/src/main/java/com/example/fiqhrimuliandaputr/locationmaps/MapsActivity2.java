@@ -1,6 +1,7 @@
 package com.example.fiqhrimuliandaputr.locationmaps;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
@@ -10,6 +11,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -55,6 +58,23 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Button btntoilet = (Button) findViewById(R.id.btn_toilet);
+        btntoilet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                Intent intent = new Intent(MapsActivity2.this, MapsActivity4.class);
+                startActivity(intent);
+            }
+        });
+        Button btncanteen = (Button) findViewById(R.id.btn_restaurant);
+        btncanteen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                Intent intent = new Intent(MapsActivity2.this, MapsActivity3.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -67,6 +87,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
+
 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
